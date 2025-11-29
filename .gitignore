@@ -3,7 +3,9 @@
 
 !.bashrc
 
-!/.config/alacritty/*
+!/.config/
+
+!/.config/alacritty/**
 !/.config/alacritty/
 
 !/.config/btop/**
@@ -30,6 +32,7 @@
 !/.config/Thunar/**
 !/.config/Thunar/
 
-!/.config/themes/**
-!/.config/themes/
+!/.config/theme/**
+!/.config/theme/
+
 
