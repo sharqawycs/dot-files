@@ -7,7 +7,6 @@ export PATH="$HOME/.local/archi/bin:$PATH" # archi scripts
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-
 PS1="\[\e[35m\]\w\[\e[m\] \[\e[36m\]archlinux \[\e[m\] "
 
 # ============== aliases ==============
@@ -38,3 +37,10 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
+
+# ======= conda initialize =======
+conda() {
+  unset -f conda
+  source /opt/miniforge/etc/profile.d/conda.sh
+  conda "$@"
+}
