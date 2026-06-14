@@ -84,6 +84,19 @@ require("lazy").setup({
     end,
   },
 
+  -- copilot
+  {
+    "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    event = "InsertEnter",
+    config = function()
+      require("copilot").setup({
+        suggestion = { enabled = false },
+        panel = { enabled = false },
+      })
+    end,
+  },
+
   -- autocompletion
   {
     "hrsh7th/nvim-cmp",
@@ -93,6 +106,7 @@ require("lazy").setup({
       "hrsh7th/cmp-path",
       "L3MON4D3/LuaSnip",
       "saadparwaiz1/cmp_luasnip",
+      "zbirenbaum/copilot-cmp",
     },
     config = function()
       local cmp = require("cmp")
@@ -120,8 +134,10 @@ require("lazy").setup({
           { name = "nvim_lsp" },
           { name = "buffer" },
           { name = "path" },
+          { name = "copilot", group_index = 2 },
         },
       })
+      require("copilot_cmp").setup()
     end,
   },
 
