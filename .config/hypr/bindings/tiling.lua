@@ -54,10 +54,10 @@ hl.bind("ALT + TAB",         hl.dsp.window.cycle_next(),              d("Cycle t
 hl.bind("ALT + SHIFT + TAB", hl.dsp.window.cycle_next({ prev = true }), d("Cycle to prev window"))
 
 -- ─── Resize active window ──────────────────────────────────────────────────
-hl.bind("SUPER + code:20",         hl.dsp.window.resize({ x = -100, y = 0 }), { repeating = true, description = "Shrink width" })
-hl.bind("SUPER + code:21",         hl.dsp.window.resize({ x =  100, y = 0 }), { repeating = true, description = "Expand width" })
-hl.bind("SUPER + SHIFT + code:20", hl.dsp.window.resize({ x = 0, y = -100 }), { repeating = true, description = "Shrink height" })
-hl.bind("SUPER + SHIFT + code:21", hl.dsp.window.resize({ x = 0, y =  100 }), { repeating = true, description = "Expand height" })
+hl.bind("SUPER + code:20",         hl.dsp.window.resize({ x = -50, y = 0, relative = true }), { repeating = true, description = "Shrink width" })
+hl.bind("SUPER + code:21",         hl.dsp.window.resize({ x =  50, y = 0, relative = true }), { repeating = true, description = "Expand width" })
+hl.bind("SUPER + SHIFT + code:20", hl.dsp.window.resize({ x = 0, y = -50, relative = true }), { repeating = true, description = "Shrink height" })
+hl.bind("SUPER + SHIFT + code:21", hl.dsp.window.resize({ x = 0, y =  50, relative = true }), { repeating = true, description = "Expand height" })
 
 -- ─── Mouse move/resize ─────────────────────────────────────────────────────
 hl.bind("SUPER + mouse:272", hl.dsp.window.drag(),   { mouse = true, description = "Move window" })
@@ -70,6 +70,12 @@ hl.bind("SUPER + ALT + LEFT",    hl.dsp.window.move({ into_group = "l" }), d("Mo
 hl.bind("SUPER + ALT + RIGHT",   hl.dsp.window.move({ into_group = "r" }), d("Move into group right"))
 hl.bind("SUPER + ALT + UP",      hl.dsp.window.move({ into_group = "u" }), d("Move into group up"))
 hl.bind("SUPER + ALT + DOWN",    hl.dsp.window.move({ into_group = "d" }), d("Move into group down"))
+
+hl.bind("SUPER + ALT + SHIFT + H",    hl.dsp.window.move({ into_group = "l" }), d("Move into group left"))
+hl.bind("SUPER + ALT + SHIFT + L",   hl.dsp.window.move({ into_group = "r" }), d("Move into group right"))
+hl.bind("SUPER + ALT + SHIFT + K",      hl.dsp.window.move({ into_group = "u" }), d("Move into group up"))
+hl.bind("SUPER + ALT + SHIFT + J",    hl.dsp.window.move({ into_group = "d" }), d("Move into group down"))
+
 hl.bind("SUPER + ALT + TAB",     hl.dsp.group.next(),                 d("Next window in group"))
 hl.bind("SUPER + ALT + SHIFT + TAB", hl.dsp.group.prev(),             d("Previous window in group"))
 
