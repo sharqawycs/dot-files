@@ -37,3 +37,6 @@
 
 !/.config/nvim/**
 !/.config/nvim/
+
+!/.config/tofi/**
+!/.config/tofi/
