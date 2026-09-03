@@ -65,9 +65,6 @@ conda() {
 
 # ======= extras =======
 
-# OpenClaw Completion
-source "$HOME/.openclaw/completions/openclaw.bash"
-
 # thefuck
 _thefuck_cache="$HOME/.cache/thefuck_init.sh"
 if [[ ! -f "$_thefuck_cache" ]]; then

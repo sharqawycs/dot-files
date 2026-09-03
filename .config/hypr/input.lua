@@ -7,7 +7,7 @@ hl.config({
         repeat_rate = 40,
         repeat_delay = 600,
         numlock_by_default = true,
-        sensitivity = -0.6,
+        sensitivity = -1,
         natural_scroll = true,
         scroll_factor = 2,
 

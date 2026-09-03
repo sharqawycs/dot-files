@@ -4,9 +4,9 @@
 -- If you're NOT using uwsm, these are fine here.
 
 -- Cursor
-hl.env("XCURSOR_SIZE", "16")
-hl.env("HYPRCURSOR_SIZE", "16")
-hl.env("QT_CURSOR_SIZE", "16")
+hl.env("XCURSOR_SIZE", "24")
+hl.env("HYPRCURSOR_SIZE", "24")
+hl.env("QT_CURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_THEME", "rose-pine-hyprcursor")
 hl.env("XCURSOR_THEME", "BreezeX-RosePine-Linux")
 

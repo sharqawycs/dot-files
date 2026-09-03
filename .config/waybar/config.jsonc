@@ -1,7 +1,6 @@
 {
   "layer": "bottom",
   "position": "top",
-  "output": "DP-1",
 
   "spacing": 0,
   "height": 22,
@@ -113,7 +112,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "spacing": 1,
-    "on-click": "xdg-terminal-exec impala",
+    "on-click": "xdg-terminal-exec nmtui",
   },
   "battery": {
     "format": "{capacity}% {icon}",

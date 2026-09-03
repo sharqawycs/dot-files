@@ -7,16 +7,7 @@ hl.bind("SUPER + Return", hl.dsp.exec_cmd("alacritty"), d("Terminal"))
 
 -- ─── App launcher ──────────────────────────────────────────────────────────
 -- Toggle tofi-drun (kill if running, else launch)
-hl.bind("SUPER + Space", function()
-    local handle = io.popen("pgrep -x tofi-drun")
-    local result = handle:read("*a")
-    handle:close()
-    if result ~= "" then
-        hl.exec_cmd("pkill tofi-drun")
-    else
-        hl.exec_cmd("tofi-drun")
-    end
-end, d("Launch apps"))
+hl.bind("SUPER + Space", hl.dsp.exec_cmd("tofi-drun"), d("Launch apps"))
 
 -- ─── Aesthetics ────────────────────────────────────────────────────────────
 hl.bind("SUPER + SHIFT + BackSpace", function()
