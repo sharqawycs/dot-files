@@ -1,4 +1,5 @@
 *
+
 !.gitignore
 
 !.bashrc
@@ -40,3 +41,12 @@
 
 !/.config/tofi/**
 !/.config/tofi/
+
+!/media/
+!/media/img/
+!/media/img/wallpapers/
+!/media/img/wallpapers/*.png
+!/media/img/wallpapers/*.jpg
+!/media/img/wallpapers/lain
+!/media/img/wallpapers/lain/*.png
+!/media/img/wallpapers/lain/*.jpg
