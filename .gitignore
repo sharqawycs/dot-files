@@ -42,6 +42,10 @@
 !/.config/tofi/**
 !/.config/tofi/
 
+!/bin/
+!/bin/cmd-screenshot
+!/bin/cmd-toggle-audio
+
 !/media/
 !/media/img/
 !/media/img/wallpapers/
